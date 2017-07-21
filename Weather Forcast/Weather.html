@@ -1,0 +1,22 @@
+<section style="border: 1px solid black;height: 600px; width: 700px; margin-left: 300px;" ng-controller="WeatherController">
+    <h2 style="text-align: center">Weather</h2><br><br><br>
+
+<div style="text-align: center">
+
+    <b>City:</b><input type="text" ng-model="city"><br><br>
+    <b>State</b><input type="text" ng-model="State"><br><br>
+<button type="button" name="Go" ng-click="Search()">GO</button><br><br><br>
+
+    <span style="color: black; font-size: 30px">Results</span><br><br><br>
+
+    <strong>Temprature</strong>
+    <p>Pressure {{ temp.pressure }}</p>
+    <p>Humidity {{ temp.humidity }}</p>
+    <p>Minimum Temperature {{ temp.temp_min}}</p>
+    <p>Maximum Temperature {{ temp.temp_max}}</p>
+    <p>Sunrise {{maindata.sunrise}}</p>
+    <p>Sunset {{maindata.sunset}}</p>
+
+</div>
+
+</section>
